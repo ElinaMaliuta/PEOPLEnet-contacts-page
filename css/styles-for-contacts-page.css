@@ -1,0 +1,108 @@
+/* STYLES for CONTACTS page */
+h2{
+	font-size:36px;
+	text-align: center;
+	background-color:#0368fd;
+	color: #EFDC02;
+	border-radius: 8px;
+	padding: 0.4em 0.5em;
+	text-transform: uppercase;
+}
+p{
+	font-size: 20px;
+	line-height: 1;
+}
+.m-b-2em{
+	margin-bottom: 2em;
+}
+.contacts-for-subscribers{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 1fr;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+}
+.contacts-for-subscribers__item:nth-child(1){
+	grid-area: 1 / 1 / 2 / 2;
+}
+.contacts-for-subscribers__item:nth-child(2){
+	grid-area: 1 / 2 / 2 / 3;
+}
+.list-with-icons{
+	display: grid;
+	grid-template-columns: auto 1fr;
+	border-collapse: collapse;
+	width: 100%;
+	place-items: center start;
+	font-size: 20px;
+}
+.list-with-icons div {
+	padding: 5px 10px;
+	color: #0368fd;
+}
+.list-with-icons div img{
+	width: 30px;
+	height: 30px;
+}
+.list-with-icons p{
+	font-size: 20px;
+	text-align: left;
+	padding-left: 2em;
+	line-height: 1.5;
+	padding-left: 0;
+}
+/* END STYLES for CONTACTS page */
+/* @media for CONTACTS page */
+ @media (max-width: 980.99px){
+	p{
+		line-height: 1.5;
+	}
+ }
+@media (max-width: 523.99px){
+	.contacts-for-subscribers{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(2, 1fr);
+		grid-column-gap: 0px;
+		grid-row-gap: 0px;
+	}
+	.contacts-for-subscribers__item:nth-child(1){
+		grid-area: 1 / 1 / 2 / 2;
+	}
+	.contacts-for-subscribers__item:nth-child(2){
+		grid-area: 2 / 1 / 3 / 2;
+	}
+}
+ @media (max-width: 418.99px){
+	p{
+		font-size: 16px;
+	}
+	.list-with-icons{
+		font-size: 16px;
+	}
+	.list-with-icons p{
+		font-size: 16px;
+	 }
+ }
+ @media (max-width: 380.99px){
+	h2{
+		font-size:30px;
+		text-align: center;
+		background-color:#0368fd;
+		color: #EFDC02;
+		border-radius: 8px;
+		padding: 0.4em 0.5em;
+		text-transform: uppercase;
+	}
+ }
+ @media (max-width: 320.99px){
+	h2{
+		font-size:26px;
+	}
+ }
+ @media (max-width: 285.99px){
+	h2{
+		font-size:20px;
+	}
+ }
+/* END @media for CONTACTS page */
